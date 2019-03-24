@@ -1,0 +1,11 @@
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\bin\Debug\netcoreapp2.1\Department.deps.json
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\bin\Debug\netcoreapp2.1\Department.runtimeconfig.json
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\bin\Debug\netcoreapp2.1\Department.runtimeconfig.dev.json
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\bin\Debug\netcoreapp2.1\Department.dll
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\bin\Debug\netcoreapp2.1\Department.pdb
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\obj\Debug\netcoreapp2.1\Department.csprojAssemblyReference.cache
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\obj\Debug\netcoreapp2.1\Department.csproj.CoreCompileInputs.cache
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\obj\Debug\netcoreapp2.1\Department.AssemblyInfoInputs.cache
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\obj\Debug\netcoreapp2.1\Department.AssemblyInfo.cs
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\obj\Debug\netcoreapp2.1\Department.dll
+D:\Hobby\CsharpTraining\source\reposSS\HomeWork\HomeWork\obj\Debug\netcoreapp2.1\Department.pdb
