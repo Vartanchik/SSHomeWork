@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HomeWork
+namespace BaseOOP
 {
     class Program
     {
@@ -9,33 +9,33 @@ namespace HomeWork
         {
             Manager manager1 = new Manager("Man1", "Manager1", 4000, 6);
             Manager manager2 = new Manager("Man2", "Manager2", 1500, 1);
-            Manager manager3 = new Manager("Man3", "Manager3", 2500, 2.5);
+            Manager manager3 = new Manager("Man3", "Manager3", 2500, 3);
 
-            Developer developer1 = new Developer("Dev1", "Developer1", 500, 0.5, manager1);
+            Developer developer1 = new Developer("Dev1", "Developer1", 500, 1, manager1);
             Developer developer2 = new Developer("Dev2", "Developer2", 700, 1, manager1);
-            Developer developer3 = new Developer("Dev3", "Developer3", 1000, 1.5, manager1);
+            Developer developer3 = new Developer("Dev3", "Developer3", 1000, 2, manager1);
             Developer developer4 = new Developer("Dev4", "Developer4", 1700, 3, manager1);
             Developer developer5 = new Developer("Dev5", "Developer5", 3000, 7, manager1);
-            Developer developer6 = new Developer("Dev6", "Developer6", 500, 0.5, manager1);
+            Developer developer6 = new Developer("Dev6", "Developer6", 500, 1, manager1);
             Developer developer7 = new Developer("Dev7", "Developer7", 700, 1, manager1);
-            Developer developer8 = new Developer("Dev8", "Developer8", 1000, 1.5, manager2);
+            Developer developer8 = new Developer("Dev8", "Developer8", 1000, 2, manager2);
             Developer developer9 = new Developer("Dev9", "Developer9", 1700, 3, manager2);
             Developer developer10 = new Developer("Dev10", "Developer10", 3000, 7, manager2);
-            Developer developer11 = new Developer("Dev11", "Developer11", 500, 0.5, manager3);
+            Developer developer11 = new Developer("Dev11", "Developer11", 500, 1, manager3);
             Developer developer12 = new Developer("Dev12", "Developer12", 700, 1, manager3);
-            Developer developer13 = new Developer("Dev13", "Developer13", 1000, 1.5, manager3);
+            Developer developer13 = new Developer("Dev13", "Developer13", 1000, 2, manager3);
             Developer developer14 = new Developer("Dev14", "Developer14", 1700, 3, manager3);
             Developer developer15 = new Developer("Dev15", "Developer15", 3000, 7, manager3);
 
-            Designer designer1 = new Designer("Des1", "Designer1", 600, 0.5, manager1, 0.5);
-            Designer designer2 = new Designer("Des2", "Designer2", 900, 1.5, manager1, 0.8);
-            Designer designer3 = new Designer("Des3", "Designer3", 1200, 2.0, manager1, 0.7);
-            Designer designer4 = new Designer("Des4", "Designer4", 1700, 2.5, manager1, 0.6);
-            Designer designer5 = new Designer("Des5", "Designer5", 2000, 3, manager2, 0.9);
-            Designer designer6 = new Designer("Des6", "Designer6", 600, 0.5, manager2, 0.4);
-            Designer designer7 = new Designer("Des7", "Designer7", 1300, 2.2, manager3, 0.65);
-            Designer designer8 = new Designer("Des8", "Designer8", 700, 1.0, manager3, 0.8);
-            Designer designer9 = new Designer("Des9", "Designer9", 1200, 1.5, manager3, 0.95);
+            Designer designer1 = new Designer("Des1", "Designer1", 600, 1, manager1, 0.5m);
+            Designer designer2 = new Designer("Des2", "Designer2", 900, 2, manager1, 0.8m);
+            Designer designer3 = new Designer("Des3", "Designer3", 1200, 2, manager1, 0.7m);
+            Designer designer4 = new Designer("Des4", "Designer4", 1700, 3, manager1, 0.6m);
+            Designer designer5 = new Designer("Des5", "Designer5", 2000, 3, manager2, 0.9m);
+            Designer designer6 = new Designer("Des6", "Designer6", 600, 1, manager2, 0.4m);
+            Designer designer7 = new Designer("Des7", "Designer7", 1300, 2, manager3, 0.65m);
+            Designer designer8 = new Designer("Des8", "Designer8", 700, 1, manager3, 0.8m);
+            Designer designer9 = new Designer("Des9", "Designer9", 1200, 2, manager3, 0.95m);
 
             manager1.Team = new List<Employee>()
                 {
@@ -58,10 +58,7 @@ namespace HomeWork
 
             Department department = new Department(new List<Manager> { manager1, manager2, manager3 });
 
-            department.GiveSalary();
-            Console.WriteLine(developer1.ToString());
-            Console.WriteLine(designer1.ToString());
-            Console.WriteLine(manager1.ToString());
+            department.PaySalary();
         }
     }
 }

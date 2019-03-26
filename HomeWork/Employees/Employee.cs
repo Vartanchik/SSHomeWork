@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HomeWork
+namespace BaseOOP
 {
     public abstract class Employee
     {
@@ -8,14 +8,14 @@ namespace HomeWork
 
         public string SecondName { get; set; }
 
-        public double Experience { get; set; }
+        public int Experience { get; set; }
 
-        public double Salary { get; set; }
+        public decimal Salary { get; set; }
 
         public Manager Manager { get; set; }
 
         // Constructor for all employees except Managers
-        public Employee(string firstName, string secondName, double salary, double experience, Manager manager)
+        public Employee(string firstName, string secondName, decimal salary, int experience, Manager manager)
         {
             FirstName = firstName;
             SecondName = secondName;
@@ -25,7 +25,7 @@ namespace HomeWork
         }
 
         // Constructor for Managers
-        public Employee(string firstName, string secondName, double salary, double experience)
+        public Employee(string firstName, string secondName, decimal salary, int experience)
         {
             FirstName = firstName;
             SecondName = secondName;
@@ -35,11 +35,11 @@ namespace HomeWork
         }
 
         // Get salary for each employee with the same dependence of experience.
-        protected double GetSalaryByExperience()
+        protected decimal GetSalaryByExperience()
         {
             if (Experience > 5)
             {
-                return Salary * 1.2 + 500;
+                return Salary * 1.20m + 500; 
             }
 
             if (Experience > 2)
@@ -51,9 +51,14 @@ namespace HomeWork
         }
 
         // Calculation of salary by different dependences for each employee
-        public virtual double CalculateSalary()
+        public virtual decimal CalculateSalary()
         {
             return GetSalaryByExperience();
+        }
+
+        public void GiveSalary()
+        {
+            Console.WriteLine($"{FirstName} {SecondName}: got salary: {CalculateSalary()}");
         }
 
         public override string ToString()

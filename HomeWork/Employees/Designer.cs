@@ -1,20 +1,38 @@
 ﻿using System;
 
-namespace HomeWork
+namespace BaseOOP
 {
     public class Designer : Employee
     {
-        public double EffectivenessCoefficient { get; set; }
+        private decimal effectivenessCoefficient;
 
-        public Designer(string firstName, string secondName, double salary, double experience, Manager manager, double effectivenessCoefficient)
+        public decimal EffectivenessCoefficient
+        {
+            get
+            {
+                return effectivenessCoefficient;
+            }
+
+            set
+            {
+                if (value < 0 || value > 1)
+                {
+                    throw new ArgumentOutOfRangeException($"{value} must be in range from 0 to 1");
+                }
+
+                effectivenessCoefficient = value;
+            }
+        }
+
+        public Designer(string firstName, string secondName, decimal salary, int experience, Manager manager, decimal effectivenessCoefficient)
             : base(firstName, secondName, salary, experience, manager)
         {
             EffectivenessCoefficient = effectivenessCoefficient;
         }
 
-        public override double CalculateSalary()
+        public override decimal CalculateSalary()
         {
-            return GetSalaryByExperience() * EffectivenessCoefficient;
+            return base.GetSalaryByExperience() * EffectivenessCoefficient;
         }
     }
 }
